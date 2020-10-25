@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  margin: 0;
+  background: #242d28;
+}
+
+.item.large {
+  font-size: 40px;
+}
+
+.item.small {
+  font-size: 20px;
+}
+
+.item {
+  color: #44fc8c;
+  border: 2px solid #44fc8c;
+  border-radius: 10px;
+  margin:10px;
+  padding:20px;
+  font-size: 30px;
+}
+
+.item:hover {
+  background-color: #44fc8c05;
+}
+
+/* Flexbox */
+.elements {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.item {
+  flex: 1 1 calc(33.33% - 20px);
+}
